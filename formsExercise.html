@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="formExercise">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+            <label for="storeNumber">Store Number</label>
+            <select name="storeNumber" id="storeNumber">
+             <option hidden>Select A Store</option>
+             <option value="3109">3109</option>
+             <option value="2421">2421</option>
+             <option value="5357">5357</option>
+            </select>
+            <!-- xxxxxxxxxxxx -->
+            <br>
+            <fieldset>
+                <legend>When you visited:</legend>
+                <!-- Date  -->
+                <label for="dateVisited">Date Visited</label>
+                <input type="Date" id="birthday" value="2022-07-22"
+                min="2022-01-01" >
+
+                <br>
+                <!-- Time -->
+                <label for="time">Time</label>
+                <input type="time" id="time" >
+
+            </fieldset> 
+
+            <!-- xxxxxxxxx Name And Email -->
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName" placeholder="Name">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Email">
+
+            <fieldset>
+                <!-- Satisfaction Survey -->
+                <legend>How would you rate your satisfaction with your visit?</legend>
+                <input type="radio" id="Satisfied" name="satisfaction" value="Satisfied">
+                <label for="satisfied">Satisfied</label>
+                <br>
+                <input type="radio" id="Neither Satisfied Nor Dissatisfied" name="satisfaction" value="Neither Satisfied Nor Dissatisfied">
+                <label for="Neither Satisfied Nor Dissatisfied">Neither Satisfied Nor Dissatisfied</label>
+                <br>
+                <input type="radio" id="Dissatisfied" name="satisfaction" value="Dissatisfied">
+                <label for="Dissatisfied">Dissatisfied</label>
+            </fieldset>
+            <!-- xxxxxxxxxxxxxxx -->
+         <label for="">Tell Us About Your Experience:</label>
+         <br>
+         <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
+
+           <br>
+           <!-- xxxxxxxxxxxxxx -->
+         <label for="visits">Times Visited Last Month: </label>
+         <br>
+         <input type="number" id="visits" min="0" max="30">           
+            <!-- xxxxxxxxxxxx -->
+           <br>
+           <!-- Check Box -->
+            <input type="checkBox" id="agree" required>
+            <label for="agree">Please check box if you are willing to be contacted about your experiences</label>
+            <br> 
+
+            <!-- Submit -->
+            <button>Submit</button>
+
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
