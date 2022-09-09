@@ -27,7 +27,7 @@
                 <!-- Date  -->
                 <label for="dateVisited">Date Visited</label>
                 <input type="Date" id="dateVisited" name="date" value="2022-07-22"
-                min="2022-01-01" >
+                min="2022-01-01" max="2022-12-31" >
 
                 <br>
                 <!-- Time -->
@@ -49,32 +49,49 @@
                 <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
                 <label for="satisfied">Satisfied</label>
                 <br>
-                <input type="radio" id="neither Satisfied Nor Dissatisfied" name="satisfaction" value="neither Satisfied Nor Dissatisfied">
+                <!-- Pre selected using checked attribute -->
+                <input type="radio" id="neither Satisfied Nor Dissatisfied" name="satisfaction" 
+                value="neither Satisfied Nor Dissatisfied" checked>
                 <label for="neither Satisfied Nor Dissatisfied">Neither Satisfied Nor Dissatisfied</label>
                 <br>
+                
                 <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
                 <label for="dissatisfied">Dissatisfied</label>
             </fieldset>
             <!-- xxxxxxxxxxxxxxx -->
-         <label for="">Tell Us About Your Experience:</label>
+            <!-- survey -->
+         <label for="experience">Tell Us About Your Experience:</label>
          <br>
          <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
 
-           <br>
+         <br>
            <!-- xxxxxxxxxxxxxx -->
+            <!-- times visited -->
          <label for="visits">Times Visited Last Month: </label>
          <br>
-         <input type="number" id="visits" min="0" max="30">           
+         <input type="number" id="visits"  name= "times" min="0" max="30">           
             <!-- xxxxxxxxxxxx -->
-           <br>
-           <!-- Check Box -->
-            <input type="checkBox" id="agree" required>
-            <label for="agree">Please check box if you are willing to be contacted about your experiences</label>
-            <br> 
 
+            <!-- Check Box -->
+         <br>
+         <input type="checkBox" id="agree" required>
+         <label for="agree">Please check box if you are willing to be contacted about your experiences.</label>
+         <br> 
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <!-- also does what min and max does -->
+            <input type="password" id="password" Pattern =".{5,10}"  
+            title="“Please enter a password that is 5 to 10 characters in length”" required >
+
+            <br>
+            <!-- Rest -->
+            <!-- Rest; resets form. -->
+            <input type="reset">
+
+            <br>
             <!-- Submit -->
-            <button>Submit</button>
-
+         <button>Submit</button>
+            <!-- <input type="Submit"> -->
             
         </fieldset>
     </form>
